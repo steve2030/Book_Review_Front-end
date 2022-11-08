@@ -1,19 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import React from 'react'
 
-const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
-}
-
-export default Navbar
-=======
-=======
 import { Link } from "react-router-dom";
 
->>>>>>> origin/collaborator22
+
 export default function Navbar(){
     return <nav className="nav">
         <Link to="/" className="home"> PICK BOOK </Link>
@@ -39,4 +27,4 @@ export default function Navbar(){
         </ul>
     </nav>
 }
->>>>>>> origin/development
+
