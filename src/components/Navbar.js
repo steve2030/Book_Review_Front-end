@@ -3,10 +3,10 @@ export default function Navbar(){
         <a href="/" className="home"> Home </a>
         <ul>
             <li>
-                <a href="/Books">Books</a>
+                <a href="/book">Books</a>
             </li>
             <li>
-                <a href="/Contact">Contact</a>
+                <a href="/contact">Contact</a>
             </li>
         </ul>
     </nav>

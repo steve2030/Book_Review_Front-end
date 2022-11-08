@@ -7,8 +7,7 @@ import Navbar from './components/Navbar';
 import Books from './components/Books';
 import Contact from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BookList from './components/BookList';
 
 function App() {
