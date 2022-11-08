@@ -1,19 +1,8 @@
 import React from 'react';
 import "./styles.css";
-import Home from './components/Home';
-import BookDetails from './components/BookDetails';
-import Review from './components/Review';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import Books from './components/Books';
-import Contact from './components/Contact';
-import BookList from './components/BookList';
-import Popular from './components/Popular';
-import SignUp from './components/SignUp';
-import Login from './components/Login';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route, Routes } from 'react-router-dom';
-
+import {Navbar,HeroSection,Categories,Popular,Home,Books,Contact,SignUp,Login} from './components/';
+import {Box} from '@mui/material';
+import {Route, Routes } from 'react-router-dom';
 
 function App() {
   return( 
@@ -28,7 +17,9 @@ function App() {
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
     </Routes>
-
+   <HeroSection />
+   <Categories />
+   <Popular />
   </div>
   </>
   );
