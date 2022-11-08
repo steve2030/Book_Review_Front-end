@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react'
 
 const Navbar = () => {
@@ -9,15 +10,31 @@ const Navbar = () => {
 
 export default Navbar
 =======
+=======
+import { Link } from "react-router-dom";
+
+>>>>>>> origin/collaborator22
 export default function Navbar(){
     return <nav className="nav">
-        <a href="/" className="home"> Home </a>
+        <Link to="/" className="home"> PICK BOOK </Link>
         <ul>
             <li>
-                <a href="/book">Books</a>
+                <Link to="/book">Books</Link>
             </li>
             <li>
-                <a href="/contact">Contact</a>
+                <Link to="/book">Popular</Link>
+            </li>
+
+            <li>
+                <Link to="/contact">Contact</Link>
+            </li>
+
+            <li>
+                <Link to="/signup"><button>SignUp</button></Link>
+            </li>
+
+            <li>
+                <Link to="/login"><button>Login</button></Link>
             </li>
         </ul>
     </nav>
