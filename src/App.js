@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
+import './styles.css';
 import BookList from './components/BookList';
 
 function App() {
