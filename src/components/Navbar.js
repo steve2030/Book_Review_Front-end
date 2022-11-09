@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Link } from "react-router-dom"
 import logo from '../images/navbar-logo.png'
@@ -31,6 +30,5 @@ const Navbar = () => {
    </header>
   );
 }
+
 export default Navbar
-
-
