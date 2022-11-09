@@ -174,3 +174,34 @@ header nav ul li {
   color: #bba145;
   font-style: normal;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #BBA145;
+  color: #FFFFFF;
+
+}
+
+.service-details {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  margin: 50px 150px;
+}
+
+.div-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin:0px 150px 2px 150px;
+  margin-left: 300px;
+  margin-bottom: 0;
+
+}
+
+.footer-trc {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
