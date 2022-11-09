@@ -2,6 +2,8 @@ import React from 'react'
 import data from '../data'
 import Card from './Card'
 import BookListHero from './BookListHero'
+//import Navbar from './Navbar'
+//import Footer from './Footer'
 
 const BookList = () => {
         const cards = data.map(item => {
