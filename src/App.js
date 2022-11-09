@@ -1,6 +1,6 @@
 import React from 'react';
 // import "./styles.css";
-import {Navbar,HeroSection,Categories,Popular,Home,Books,Contact,SignUp,Login} from './components/';
+import {Navbar,HeroSection,Categories,Popular,Home,Books,Contact,SignUp,Login,Footer} from './components/';
 import {Box} from '@mui/material';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import {Route, Routes } from 'react-router-dom';
@@ -22,6 +22,7 @@ function App() {
    {/* <HeroSection /> */}
    <Categories />
    <Popular />
+   <Footer />
   </div>
   </>
   );
