@@ -12,9 +12,14 @@ import BookList from './components/BookList';
 
 function App() {
   return (
-    <div className="App">
-     <Footer />
-
+    <div>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/booklist'element={<BookList />}/>
+        <Route path='./bookdetails' element={<BookDetails />} />
+      </Routes>
+      <Footer/>
     </div>
   );
 }
