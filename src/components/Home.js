@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import HeroSection from './HeroSection';
 import Categories from './Categories';
 import Popular from './Popular';
+import LowerSection from './LowerSection';
 //import Footer from './Footer';
 
 
@@ -12,6 +13,7 @@ const Home = () => {
       <HeroSection />
       <Categories />
       <Popular />
+      <LowerSection />
     </div>
   );
 }

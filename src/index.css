@@ -1,10 +1,15 @@
 * {
   font-family: "Poppins", sans-serif;
-  background-color: #fcfaf3;
+  /* background-color: #fcfaf3; */
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .card {
-  width: 374px;
+  width: 300px;
   background-color: #fcfaf3;
 }
 
@@ -60,6 +65,7 @@
   gap: 50px;
   overflow: auto;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .main-container {
@@ -103,6 +109,7 @@ header {
   margin-top: 0;
   padding-top: 40px;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 
 header img {
@@ -120,7 +127,6 @@ header nav ul {
 
 header nav ul li {
   list-style-type: none;
-  text-decoration: none;
 }
 
 .buttons {
@@ -143,21 +149,21 @@ header nav ul li {
 .hero-section {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 70px;
   align-items: center;
-  margin: auto;
-  margin-left: 120px;
+  margin-left: 100px;
   margin-right: 100px;
+  margin-top: 0;
 }
 
 .hero-section img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 320px;
 }
 
 .hero-btn {
   padding: 15px 10px;
-  width: 25%;
+  width: 30%;
   border-radius: 5px;
   font-size: 20px;
   margin-top: 20px;
@@ -173,4 +179,114 @@ header nav ul li {
 .left-container em {
   color: #bba145;
   font-style: normal;
+}
+
+.links {
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+
+.popular {
+  margin-bottom: 0;
+}
+
+.lower-section {
+  background: url('./images/retro-image.png');
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.lower-section-content {
+  align-items: center;
+  text-align: center;
+  margin: 300px;
+  padding-top: 200px;
+  width: 35%;
+  color: #ffffff;
+  margin-left: 500px;
+}
+
+.lower-section-btn {
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #BBA145;
+  color: #FFFFFF;
+
+}
+
+.service-details {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  margin: 50px 150px;
+}
+
+.div-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin:0px 150px 2px 150px;
+  margin-left: 300px;
+  margin-bottom: 0;
+
+}
+
+.footer-trc {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.book-data {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  margin: 30px;
+  width: 50%;
+  border-radius: 10px;
+  margin: auto;
+  /* border: 1px solid #3a6351; */
+  margin-bottom: 10px;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  
+}
+
+.book-data img {
+  height: 330px;
+  width: 300px;
+  
+}
+
+.red {
+  background-color: red;
+  color: #ffffff;
+}
+
+.review {
+  display: flex;
+  gap: 100px;
+  width: 600px;
+  margin-left: 0;
+}
+
+.review-page {
+  text-align: left;
+}
+
+.span-element {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
 }
