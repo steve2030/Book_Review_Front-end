@@ -1,10 +1,10 @@
 import React from 'react'
-import data from '../data'
+import Data from './Data'
 import Card from './Card'
 import BookListHero from './BookListHero'
 
 const BookList = () => {
-        const cards = data.map(item => {
+        const cards = Data.map(item => {
             return (
                 <Card 
                     key={item.id}
