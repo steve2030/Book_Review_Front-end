@@ -1,15 +1,21 @@
 import React from 'react'
 import data from '../data'
+import Card from './Card'
 
 export default function RelatedBooks() {
-    // const cardData = data.map(item => {
-    //     item.
-    // })
+    const cardData = data.map(item => {
+        return (
+            <Card
+            key = {item.key} 
+            item = {item}
+            />
+        )
+    })
     return (
-        <div>
-            <h1>Related Books</h1>
+        <div className='popular'>
+            <h3>Related Books</h3>
             <div className='cards-list'>
-                {/* {cardData} */}
+                {cardData}
             </div>
         </div>
     )

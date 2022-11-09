@@ -14,7 +14,7 @@ export default function Popular() {
 
     return (
         <div className='popular'>
-            <h2>Popular</h2>
+            <h3>Popular</h3>
             <div className='cards-list'>
                 {cards}
             </div>
