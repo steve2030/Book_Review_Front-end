@@ -10,7 +10,7 @@ const HeroSection = () => {
         <p >A review gives the reader a concise summary of the content. 
             This includes a relevant description of the topic as well as its overall perspective, 
             argument, or purpose</p>
-            <button type="button" class="btn btn-primary">Review Now</button>
+            <button type="button" class="btn btn-success">Review Now</button>
 
        </div>
        <img src={image} className="image" alt="woman" />

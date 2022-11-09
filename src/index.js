@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-
+import "./styles.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import LibraryBooksRoundedIcon from '@mui/icons-material/LibraryBooksRounded';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

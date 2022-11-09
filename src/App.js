@@ -1,7 +1,8 @@
 import React from 'react';
-import "./styles.css";
+// import "./styles.css";
 import {Navbar,HeroSection,Categories,Popular,Home,Books,Contact,SignUp,Login} from './components/';
 import {Box} from '@mui/material';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import {Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
     </Routes>
-   <HeroSection />
+
+   {/* <HeroSection /> */}
    <Categories />
    <Popular />
   </div>
