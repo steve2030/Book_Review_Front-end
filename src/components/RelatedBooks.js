@@ -3,29 +3,30 @@ import data from '../data'
 import Card from './Card'
 
 export default function RelatedBooks() {
-
-    const baseApiUrl = "https://localhost:9292"
-    const [relatedBooks,setRelatedBooks] = useState([]);
-
-     useEffect(() => {
-        fetch(`${baseApiUrl}/book`)
-        .then((respone) => response.json())
-        .then((data) => console.log(data));
-     },[]);
-
-    const cardData = data.map(item => {
+    const [cardData, setCardData] = useState([]);
+    useEffect(() => {
+        fetch("http://localhost:9292/author")
+            .then(res => res.json())
+            .then(data => setCardData(data))
+    }, [])
+    const cards = Array.from(cardData).map(item => {
         return (
-            <Card
-            key = {item.key} 
-            item = {item}
+            <Card 
+                key={item.id}
+                image_url = {item.books[0]?.image_url}
+                genre = {item.books[0]?.genre}
+                rating = {item.books[0]?.pages}
+                title = {item.books[0]?.title}
+                name = {item.name}
             />
         )
     })
+    
     return (
         <div className='popular'>
             <h3>Related Books</h3>
             <div className='cards-list'>
-                {cardData}
+                {cards}
             </div>
         </div>
     )
