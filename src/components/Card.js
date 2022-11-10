@@ -22,7 +22,7 @@ export default function Card(props) {
         // </div>
         <div className="col-md-4">
             <div className="my-3">
-                <img src={props.image_url} alt="" />
+                <img src={props.image_url}  onClick={navigateToBookDetails} alt="" />
                 <p className='text-muted h6'><em>{props.genre}</em></p>
                 <p>{props.title}</p>
                 <p className="author">{props.name}</p>
