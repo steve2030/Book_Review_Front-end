@@ -1,12 +1,12 @@
 import React from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Card(props) {
     
     const navigate = useNavigate();
     const navigateToBookDetails = () => {
-        navigate('/bookdetails');
+        navigate(`/bookdetails/${props.book_id}`);
 
     };
     return (
