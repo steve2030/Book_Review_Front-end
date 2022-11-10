@@ -1,7 +1,10 @@
 import React from "react"
 import image from '../images/retro-image.png'
+import ReviewModal from "./ReviewModal"
 
 export default function BookDetailCard() {
+    const [isOpen, setIsOpen] = React.useState(false)
+
     return (
         <div className='book-data'>
           <img src={image}/>
@@ -15,7 +18,14 @@ export default function BookDetailCard() {
             </div>
             <p>Your one-stop shop to review your favorite books. Comprises a wide collection of novels, academic papers, journals, fiction books, and poetry articles. A great resource for those eager to quench their creative and imaginative thirst.</p>
             <div className='buttons review'>
-              <button className=' green book-btn'>Review Book</button>
+              <div>
+                <button className=' green book-btn' onClick={()=>setIsOpen(true)}>Review Book</button>
+                <ReviewModal open={isOpen} onClose={()=>setIsOpen(false)} className='modal'>
+                    <form>
+                        <textarea placeholder='Write Review'></textarea>
+                    </form>
+                </ReviewModal>
+              </div>
               <button className=' red book-btn'>Delete Book</button>
             </div>
           </div>
