@@ -11,9 +11,6 @@ export default function Popular() {
             .then(res => res.json())
             .then(data => setCardData(data))
     }, [])
-    // Object.keys(cardData).map(
-    //     (i) => console.log(cardData[i].books[0]["id"],"Hello")
-    // )
     const cards = Array.from(cardData).map(item => {
         return (
             <Card 
@@ -27,6 +24,7 @@ export default function Popular() {
         )
     })
 
+    
 
     return (
         <div className='popular'>
