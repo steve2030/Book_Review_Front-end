@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { useEffect, useState } from 'react'
-
+import UploadBook from './components/uploadBook'
 function App() {
   const [cardData, setCardData] = useState([]);
     useEffect(() => {
@@ -26,6 +26,9 @@ function App() {
         
         />}/>
         <Route path='/bookdetails' element={<BookDetails 
+        
+        />} />
+         <Route path='/upload_book' element={<UploadBook 
         
         />} />
       </Routes>

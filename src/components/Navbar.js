@@ -17,9 +17,8 @@ const Navbar = () => {
             <Link to="/booklist" className='links'>BookList</Link>
           </li>
           <li>
-            <Link to='/bookdetails' className='links'>Book Details</Link>
+            <Link to='/upload_book' className='links'>Add Book</Link>
           </li>
-          <li>Add Book</li>
           <li>Contact</li>
         </ul>
     </nav>
