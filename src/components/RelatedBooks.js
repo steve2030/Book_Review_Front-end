@@ -1,5 +1,4 @@
 import React,{useEffect, useState} from 'react'
-import data from '../data'
 import Card from './Card'
 
 export default function RelatedBooks() {

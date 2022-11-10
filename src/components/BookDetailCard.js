@@ -1,12 +1,15 @@
 import React, { useEffect } from "react"
 //import image from '../images/retro-image.png'
 import ReviewModal from "./ReviewModal"
-import { useParams } from "react-router"
+import { useNavigate, useParams } from "react-router";
+
 
 export default function BookDetailCard() {
     const [isOpen, setIsOpen] = React.useState(false)
     const {id} = useParams()
     console.log(id)
+
+    const navigate = useNavigate()
 
     const [cardInfo, setCardInfo] = React.useState({})
 
@@ -18,6 +21,14 @@ export default function BookDetailCard() {
 
     console.log(cardInfo)
 
+    function handleDeleteClick(){
+      fetch(`http://localhost:9292/book/${id}`,{
+        method: "DELETE"
+      })
+      navigate("/booklist")
+    }
+  
+  
     return (
         <div className='book-data'>
           <img src={cardInfo.image_url}/>
@@ -39,7 +50,7 @@ export default function BookDetailCard() {
                     </form>
                 </ReviewModal>
               </div>
-              <button className=' red book-btn'>Delete Book</button>
+              <button className=' red book-btn' onClick={handleDeleteClick}>Delete Book</button>
             </div>
           </div>
         </div>
