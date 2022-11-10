@@ -1,7 +1,9 @@
 * {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
   
   /* background-color: #fcfaf3; */
 }
@@ -102,7 +104,8 @@ header {
   width: 100%;
 }
 
-header img {
+
+/* header img {
   height: 45px;
   width: 90px;
   margin-left: 200px;
@@ -119,9 +122,9 @@ header nav ul {
 header nav ul li {
   list-style-type: none;
   text-decoration: none;
-}
+} */
 
-.buttons {
+/* .buttons {
   display: flex;
   gap: 20px;
   margin-left:200px;
@@ -134,7 +137,7 @@ header nav ul li {
   border: 1px solid #3a6351;
   height: 30px;
   width: 100px;
-}
+} */
 .green {
   background-color: #3a6351;
   color: #ffffff;
