@@ -18,7 +18,7 @@ const BookList = () => {
         return (
             <Card 
                 key={item.id}
-                book_id = {item.id}
+                book_id = {item.books[0]?.id}
                 image_url = {item.books[0]?.image_url}
                 genre = {item.books[0]?.genre}
                 rating = {item.books[0]?.pages}

@@ -6,7 +6,7 @@ import { useParams } from "react-router"
 export default function BookDetailCard() {
     const [isOpen, setIsOpen] = React.useState(false)
     const {id} = useParams()
-    //console.log(id)
+    console.log(id)
 
     const [cardInfo, setCardInfo] = React.useState({})
 
