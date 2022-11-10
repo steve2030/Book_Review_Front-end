@@ -346,3 +346,7 @@ header nav ul li {
   width: 160px;
   font-size: 18px;
 }
+
+.modal textarea {
+  border-radius: 5px;
+}
