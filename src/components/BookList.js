@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../data'
+//import data from '../data'
 import Card from './Card'
 import BookListHero from './BookListHero'
 //import Navbar from './Navbar'
@@ -18,6 +18,7 @@ const BookList = () => {
         return (
             <Card 
                 key={item.id}
+                book_id = {item.id}
                 image_url = {item.books[0]?.image_url}
                 genre = {item.books[0]?.genre}
                 rating = {item.books[0]?.pages}
