@@ -1,22 +1,35 @@
-import React from "react"
-import image from '../images/retro-image.png'
+import React, { useEffect } from "react"
+//import image from '../images/retro-image.png'
 import ReviewModal from "./ReviewModal"
+import { useParams } from "react-router"
 
 export default function BookDetailCard() {
     const [isOpen, setIsOpen] = React.useState(false)
+    const {id} = useParams()
+    //console.log(id)
+
+    const [cardInfo, setCardInfo] = React.useState({})
+
+    useEffect(() => {
+        fetch(`http://localhost:9292/book/${id}`)
+        .then(res => res.json())
+        .then(data => (setCardInfo(data)))
+    }, [])
+
+    console.log(cardInfo)
 
     return (
         <div className='book-data'>
-          <img src={image}/>
+          <img src={cardInfo.image_url}/>
           <div className='book-details'>
-            <h2 className='book-title review-page'>1984 Orwell</h2>
-            <p className='author-info review-page'><em>By Robert Harris</em></p>
+            <h2 className='book-title review-page'>{cardInfo.title}</h2>
+            <p className='author-info review-page'><em>By {cardInfo.publisher}</em></p>
             <p className='review-page'>Description</p>
             <div className='review-page span-element'>
-              <p><em>Fiction</em></p>
+              <p><em>{cardInfo.genre}</em></p>
               <p>4.5</p>
             </div>
-            <p>Your one-stop shop to review your favorite books. Comprises a wide collection of novels, academic papers, journals, fiction books, and poetry articles. A great resource for those eager to quench their creative and imaginative thirst.</p>
+            <p>{cardInfo.description}</p>
             <div className='buttons review'>
               <div>
                 <button className=' green book-btn' onClick={()=>setIsOpen(true)}>Review Book</button>
