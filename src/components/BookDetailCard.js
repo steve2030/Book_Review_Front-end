@@ -19,7 +19,7 @@ export default function BookDetailCard() {
     console.log(cardInfo)
 
     return (
-        <div className='book-data'>
+        <div className='book-data my-5'>
           <img src={cardInfo.image_url}/>
           <div className='book-details'>
             <h2 className='book-title review-page'>{cardInfo.title}</h2>
@@ -32,14 +32,14 @@ export default function BookDetailCard() {
             <p>{cardInfo.description}</p>
             <div className='buttons review'>
               <div>
-                <button className=' green book-btn' onClick={()=>setIsOpen(true)}>Review Book</button>
+                <button className='btn btn-primary' onClick={()=>setIsOpen(true)}>Review Book</button>
                 <ReviewModal open={isOpen} onClose={()=>setIsOpen(false)} className='modal'>
                     <form>
                         <textarea placeholder='Write Review'></textarea>
                     </form>
                 </ReviewModal>
               </div>
-              <button className=' red book-btn'>Delete Book</button>
+              <button className='btn btn-danger'>Delete Book</button>
             </div>
           </div>
         </div>

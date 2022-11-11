@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './components/Home'
 import BookList from './components/BookList'
 import BookDetails from './components/BookDetails'
+import FilterCategory from './components/FilterCategory'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -28,6 +29,8 @@ function App() {
         <Route path='/bookdetails/:id' element={<BookDetails 
         
         />} />
+        <Route path='/category/:name' element={<FilterCategory />} />
+        {/* <Route path='popular/:id' element={<BookDetails />}/> */}
          <Route path='/upload_book' element={<UploadBook 
         
         />} />

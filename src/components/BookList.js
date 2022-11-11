@@ -10,31 +10,36 @@ const BookList = () => {
         
     const [cardData, setCardData] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:9292/author")
+        fetch("http://localhost:9292/book")
             .then(res => res.json())
             .then(data => setCardData(data))
     }, [])
-    const cards = Array.from(cardData).map(item => {
+    const cards = cardData.map(item => {
         return (
             <Card 
                 key={item.id}
-                book_id = {item.books[0]?.id}
-                image_url = {item.books[0]?.image_url}
-                genre = {item.books[0]?.genre}
-                rating = {item.books[0]?.pages}
-                title = {item.books[0]?.title}
+                id = {item.id}
+                image_url = {item.image_url}
+                genre = {item.genre}
+                rating = {item.pages}
+                title = {item.title}
                 name = {item.name}
             />
         )
     })
+    
 
     
         return (
             <div>
                 <BookListHero />
-                <div className='cards-list'>
-                    {cards}
+                <div className='container'>
+                    <div className='row mx-5'>
+                        {cards}
+                    </div>
+
                 </div>
+              
             </div>
         );
 }

@@ -7,7 +7,7 @@ const BookDetails = () => {
   return (
     <div>
         <BookDetailCard />
-        <RelatedBooks />
+        {/* <RelatedBooks /> */}
     </div>
   );
 }

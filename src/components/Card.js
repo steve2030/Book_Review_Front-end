@@ -7,7 +7,7 @@ export default function Card(props) {
     
     const navigate = useNavigate();
     const navigateToBookDetails = () => {
-        navigate(`/bookdetails/${props.book_id}`);
+        navigate(`/bookdetails/${props.id}`);
 
     };
     return (
@@ -23,9 +23,9 @@ export default function Card(props) {
         <div className="col-md-4">
             <div className="my-3">
                 <img src={props.image_url}  onClick={navigateToBookDetails} alt="" />
-                <p className='text-muted h6'><em>{props.genre}</em></p>
-                <p>{props.title}</p>
-                <p className="author">{props.name}</p>
+                {/* <p className='text-muted h6'><em>{props.genre}</em></p>
+                <p>{props.title}</p> */}
+                {/* <p className="author">{props.name}</p> */}
             </div>
         </div>
       

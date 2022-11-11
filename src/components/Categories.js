@@ -4,9 +4,19 @@ import image2 from '../images/icons8-poetry-64 1.png';
 import image3 from '../images/icons8-journal-64 1.png';
 import image4 from '../images/icons8-ibooks-64 1.svg';
 import hero from "../css/hero.css"
+import { useNavigate } from 'react-router-dom';
+
 
 
 export default function Categories() {
+    const navigate = useNavigate();
+    const navigateToFiltered = (val) => {
+                    navigate(`/category/${val}`);
+
+        
+
+    };
+
     return (
     // <div className='categories'>
     //   <h3>Categories</h3>
@@ -25,7 +35,7 @@ export default function Categories() {
             <div className="row mt-5 align-items-center text-center">
                 
                 <div className="col-md-3 ">
-                    <div className="cathold">
+                    <div className="cathold" onClick={() => navigateToFiltered("Academic")} >
 
                         <img src={image1} className="img-fluid mx-auto p-3" alt="" />
                         <p className="text-center my-3">Academic</p>
@@ -33,7 +43,7 @@ export default function Categories() {
           
             </div>  
             <div className="col-md-3 ">
-                    <div className="cathold">
+                    <div className="cathold" onClick={() => navigateToFiltered("Poetry")}>
 
                         <img src={image2} className="img-fluid mx-auto p-3" alt="" />
                         <p className="text-center my-3">Poetry</p>
@@ -41,7 +51,7 @@ export default function Categories() {
           
             </div>  
             <div className="col-md-3 ">
-                    <div className="cathold">
+                    <div className="cathold" onClick={() => navigateToFiltered("Journal")}>
 
                         <img src={image3} className="img-fluid mx-auto p-3" alt="" />
                         <p className="text-center my-3">Journal</p>
@@ -49,7 +59,7 @@ export default function Categories() {
           
             </div>  
             <div className="col-md-3 ">
-                    <div className="cathold">
+                    <div className="cathold" onClick={() => navigateToFiltered("Fiction")}>
 
                         <img src={image4} className="img-fluid mx-auto p-3" alt="" />
                         <p className="text-center my-3">Fiction</p>
