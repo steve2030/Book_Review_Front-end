@@ -1,33 +1,46 @@
 import React, { useEffect } from "react"
-//import image from '../images/retro-image.png'
-import ReviewModal from "./ReviewModal"
+import Card from './Card'
+
 import { useParams } from "react-router"
-import { useNavigate } from 'react-router-dom';
 
 
 export default function FilterCategory() {
-    const [isOpen, setIsOpen] = React.useState(false)
-    const {name} = useParams()
     
+    const {name} = useParams()
+    const [cat, setCat] = React.useState([])
+
     console.log(">>>>>>>>>>>",name)
     
 
-    const [cardInfo, setCardInfo] = React.useState({})
 
     useEffect(() => {
         fetch(`http://localhost:9292/book/category/${name}`)
         .then(res => res.json())
-        .then(data => (setCardInfo(data)))
+        .then(data => (setCat(data)))
     }, [])
 
-    console.log(cardInfo)
+    const cards = cat.map(item => {
+        return (
+            <Card 
+                key={item.id}
+                id = {item.id}
+                image_url = {item.image_url}
+                genre = {item.genre}
+                rating = {item.pages}
+                title = {item.title}
+                
+            />
+        )
+    })
+    console.log(cat)
 
     return (
         <div>
             
             <div className='container'>
+                <p className="text-center h4">{name}</p>
                 <div className='row mx-5'>
-                    {cardInfo}
+                    {cards}
                 </div>
 
             </div>

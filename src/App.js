@@ -11,7 +11,7 @@ import UploadBook from './components/uploadBook'
 function App() {
   const [cardData, setCardData] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:9292/author")
+        fetch("http://localhost:9292/book")
             .then(res => res.json())
             .then(data => setCardData(data))
     }, [])
