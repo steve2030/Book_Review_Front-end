@@ -15,7 +15,7 @@ export default function HeroSection() {
     <div className="row align-items-center" >
         <div className="col-md-6 col-lg-6">
             <p className="h3 spacing"> <span className='welcome h3'>Welcome</span> To  Book Reviews</p>
-            <p className="my-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sequi illo quo voluptatum laborum enim cum praesentium. Eum.</p>
+            <p className="my-5 lead">A review gives the reader a concise summary of the content. This includes a relevant description of the topic as well as its overall perspective, argument, or purpose.</p>
             <Link>
             <button className="btn btn-primary">
                  Review Now
