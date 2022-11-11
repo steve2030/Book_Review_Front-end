@@ -9,7 +9,7 @@ export default function RelatedBooks() {
 
      useEffect(() => {
         fetch(`${baseApiUrl}/book`)
-        .then((respone) => response.json())
+        .then((response) => response.json())
         .then((data) => console.log(data));
      },[]);
 
