@@ -13,7 +13,8 @@ export default function LowerSection() {
         //     </div>
         // </div>
         <div className='lower-section'>
-           <div className='callAction'>
+            <div className="bg">
+                <div className='callAction'>
             <div>
             <p className='text-center text-white'>Your one-stop shop to review your favorite books. Comprises a wide collection of novels, academic papers, journals, fiction books, and poetry articles. A great resource for those eager to quench their creative and imaginative thirst.</p>
 
@@ -23,7 +24,9 @@ export default function LowerSection() {
                     <button className='btn btn-primary'>Review Now</button>
                     </Link>  
                 </div>  
-            </div>        
+            </div>      
+            </div>
+             
 
         </div>
     );
