@@ -1,12 +1,27 @@
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
   font-family: "Poppins", sans-serif;
-  
+
   /* background-color: #fcfaf3; */
 }
 
 body {
   margin: 0;
   box-sizing: border-box;
+}
+.callAction{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%,-50%);  
+  z-index: 1;
+}
+.bg{
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2 !important;
+  height: 80vh;
 }
 
 .card {
@@ -57,10 +72,10 @@ body {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 100px;
   overflow: auto;
   justify-content: center;
-  margin: 10px 200px;
+  /* margin: 10px 100px; */
 }
 
 .main-container {
@@ -96,13 +111,12 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  width: 80%;
+  margin: 20px;
+  width: 100%;
 }
 
-header img {
+
+/* header img {
   height: 45px;
   width: 90px;
   margin-left: 200px;
@@ -110,19 +124,22 @@ header img {
 header nav ul {
   display: flex;
   flex-direction: row;
-  margin: 0 80px 0 300px;
+  margin-left: 500px;
   gap: 30px;
   text-decoration: none;
+  justify-content: center;
 }
 
 header nav ul li {
   list-style-type: none;
   text-decoration: none;
-}
+} */
 
-.buttons {
+/* .buttons {
   display: flex;
   gap: 20px;
+  margin-left:200px;
+  margin-top: 10px;
 }
 .buttons button {
   padding: 5px 18px;
@@ -131,7 +148,7 @@ header nav ul li {
   border: 1px solid #3a6351;
   height: 30px;
   width: 100px;
-}
+} */
 .green {
   background-color: #3a6351;
   color: #ffffff;
@@ -141,18 +158,18 @@ header nav ul li {
   flex-direction: row;
   gap: 100px;
   align-items: center;
-  margin: auto;
+  /* margin: auto;
   margin-left: 120px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 0;
+  margin-top: 0; */
 }
 
 .hero-section img {
-  width: 300px;
-  height: 300px;
-  width: 350px;
-  height: 320px;
+  width: 100%;
+  height: 500px;
+  margin:20px;
+
 }
 
 .hero-btn {
@@ -164,10 +181,11 @@ header nav ul li {
   margin-top: 20px;
 }
 .left-container {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  width: 40%;
+  width: 100%;
   margin-left: 100px;
+  
 }
 .left-container em {
   color: #bba145;
@@ -180,15 +198,15 @@ header nav ul li {
 }
 
 .popular {
-  margin-bottom: 0;
+  /* margin:0px 20px 0px 20px; */
+  margin-bottom: 20px;
 }
 
 .lower-section {
   background: url('./images/retro-image.png');
-  width: 100%;
-  height: 500px;
   background-size: cover;
-  margin-top: 20px;
+  height: 80vh;
+  position: relative;
 }
 
 .lower-section-content {
@@ -301,16 +319,18 @@ header nav ul li {
   background-color: #fcfaf3;
   width: 100%;
   height: 250px;
+  
 }
 
 .book-types {
   background-color: #FFFFFF;
-  width: 120px;
+  /* width: 120px; */
   height: 130px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-top: 30px;
+  /* justify-content: center; */
+  margin: 0px 90px 0px 90px;
 }
 
 .book-types img {
@@ -328,6 +348,7 @@ header nav ul li {
   display: flex;
   flex-direction: column;
   background-color: #fcfaf3;
+  
 }
 
 .categories h3 {
@@ -345,4 +366,215 @@ header nav ul li {
 .review button {
   width: 160px;
   font-size: 18px;
+}
+
+.modal textarea {
+  border-radius: 5px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+body{
+  background: rgba(224, 224, 224, 0.15) !important;
+}
+.btn-primary{
+  background-color: #3A6351 !important;
+  border-color: #3A6351 !important;
+}
+.form-sec{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 100%);
+border: 2px solid #FFFFFF;
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 16px;
+}
+
+form .post-image {
+  position: relative;
+  float: left;
+  height: 152px;
+  width: 170px;
+  background: #f2f2f2;
+  border: 1px dashed #ccc;
+  padding: 0;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mrm {
+  margin-right: 20px;
+}
+
+.mts {
+  margin-top: 10px;
+}
+
+form .post-image .upload-section img {
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  vertical-align: top;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+form .post-image .preview-section img {
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0px;
+}
+
+form .post-image .icon-camera {
+  display: none;
+}
+
+form .post-image input {
+  display: none;
+}
+
+form .post-image.empty {
+  position: relative;
+  float: left;
+  height: 130px;
+  width: 130px;
+  background: #f2f2f2;
+  border: 1px dashed #ccc;
+  padding: 0;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+form .post-image.empty .icon-camera {
+  display: block;
+  height: 100%;
+  line-height: 30px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  width: 100%;
+  cursor: pointer;
+}
+.postImageForm{
+  display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+form .post-image.empty .icon-camera img {
+  height: 60px;
+  width: 60px;
+}
+
+form .post-image.empty input {
+  cursor: pointer;
+}
+
+form .post-image p,
+.file_container-orange p {
+  margin: 10px 0;
+  margin: 1rem 0;
+  text-align: center;
+  font-family: "OpenSansSemiBold", sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.addBook{
+  letter-spacing: 5px;
+
+}
+#list {
+  float: left;
+}
+
+.thumb {
+  height: 130px;
+  width: 130px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.remove_img_preview {
+    position: relative;
+    top: -145px;
+    right: -64px;
+    font-size: 20px;
+    padding: 2px 5px;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.remove_img_preview:before {
+    content: "×";
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:600px) {
+  .lower-section{
+    height: 100vh;
+
+  }
+  .action-btn{
+    display: none !important;
+  }
+  .footer{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width:1000px) {
+  .footer{
+    display: none;
+  }
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
