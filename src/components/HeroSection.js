@@ -8,15 +8,12 @@ export default function HeroSection() {
 
    
     return (
-
-        
-
 <div className="container">
     <div className="row align-items-center" >
         <div className="col-md-6 col-lg-6">
             <p className="h3 spacing"> <span className='welcome h3'>Welcome</span> To  Book Reviews</p>
-            <p className="my-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sequi illo quo voluptatum laborum enim cum praesentium. Eum.</p>
-            <Link>
+            <p className="my-5">Your one-stop shop to review your favorite books. Comprises a wide collection of novels, academic papers, journals, fiction books, and poetry articles. A great resource for those eager to quench their creative and imaginative thirst.</p>
+            <Link to="/booklist">
             <button className="btn btn-primary">
                  Review Now
             </button>   

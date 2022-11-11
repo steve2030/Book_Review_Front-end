@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 //import image from '../images/retro-image.png'
 import ReviewModal from "./ReviewModal"
 import { useNavigate, useParams } from "react-router";
+
 export default function BookDetailCard() {
     const [isOpen, setIsOpen] = React.useState(false)
     const {id} = useParams()
@@ -19,6 +20,21 @@ export default function BookDetailCard() {
       })
       navigate("/booklist")
     }
+
+    const [review, setReview] = React.useState({id:''})
+    function handleChange(event) {
+        setReview(event.target.value)
+    }
+
+    function handleSubmitReview(event) {
+        event.preventDefault()
+        fetch(`http://localhost:9292/review/${id}`, {
+            method: "POST",
+            body: JSON.stringify({
+                review: review
+            },)
+        })
+    }
     return (
         <div className='book-data my-5'>
           <img src={cardInfo.image_url}/>
@@ -35,8 +51,9 @@ export default function BookDetailCard() {
               <div>
                 <button className='btn btn-primary' onClick={()=>setIsOpen(true)}>Review Book</button>
                 <ReviewModal open={isOpen} onClose={()=>setIsOpen(false)} className='modal'>
-                    <form>
-                        <textarea placeholder='Write Review'></textarea>
+                    <form onSubmit={handleSubmitReview}>
+                        <textarea placeholder='Write Review' onChange={handleChange} ></textarea>
+                        {/* <button className='green book-btn' onClick={onClose}>Review</button> */}
                     </form>
                 </ReviewModal>
               </div>

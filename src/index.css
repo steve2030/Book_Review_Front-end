@@ -578,3 +578,9 @@ form .post-image p,
     transform: rotate(360deg);
   }
 }
+
+
+.modal-popup {
+  display: flex;
+  flex-direction: column;
+}

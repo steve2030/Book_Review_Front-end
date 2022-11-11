@@ -49,9 +49,9 @@ const Navbar = () => {
         <li className="nav-item">
           <Link className="nav-link" to='/upload_book'>Add Book</Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link className="nav-link" >Contact</Link>
-        </li>
+        </li> */}
      
       </ul>
     </div>
