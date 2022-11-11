@@ -1,5 +1,5 @@
-# Welcome to PhotoZone
-This is a photo fetch-and-display website, 05/10/2022
+# Welcome to Pick Book
+This is a book review website website, 05/10/2022
 
 By Group 1 (DevKnights)
 
