@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Welcome to PhotoZone
+This is a photo fetch-and-display website, 05/10/2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+By Group 1 (DevKnights)
 
-## Available Scripts
+## **Contributors**
+-Stephen Munyao
 
-In the project directory, you can run:
+-Kevin Kipkoech
 
-### `npm start`
+-Afandi Elomda
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Jaffar Gura
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Kazungu Ang'ila
 
-### `npm test`
+## **Table of Contents**
+[Description](#description)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+[Installation Requirements](#installationrequirements)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[Installation Process](#installationprocess)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+[Technology Used](#technologyused)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[License](#license)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## **Description**
+This website was developed using React.js (frontend) and Sinatra-ActiveRecord (backend). 
 
-## Learn More
+## **Key Functionalities of the WebApp**
+-Selecting a book for review/deletion
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-Posting a review
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-Deleting a book
 
-### Code Splitting
+## **Installation Requirements**
+To install and run this project, you need:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-a laptop with a pre-installed operating system.
 
-### Analyzing the Bundle Size
+-Internet connection
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-node installed on computer
+## **Installation Process**
+1. Clone the project onto your computer using the git clone command. Remember to use my repository address as the source. 
+2. Navigate to the project folder and run these commands:
 
-### Making a Progressive Web App
+    npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    json-server --watch db.json
 
-### Advanced Configuration
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+3. The website may fail to display contents earlier on depending on internet space and ability to access online resources such as the font-awesome library and the API. If that happens, please give it a few minutes. 
+## **Technology Used**
+-React.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-Ruby
 
-### `npm run build` fails to minify
+-Sinatra & ActiveRecord
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-CSS
+
+## **License**
+MIT License Copyright (c) 2022 Group 1
+
+ ## **Page Screenshot**
+
+ ![screenshot of the site](./src/images/page-app.png " page")
