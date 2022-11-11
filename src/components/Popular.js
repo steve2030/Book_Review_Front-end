@@ -36,7 +36,7 @@ export default function Popular() {
         <div className="container mt-3 mb-3">
         <h2 className=" mt-4" ><strong>Popular</strong></h2>
         <div className="row mx-5">
-              {cards}
+              {cards.splice(3,6)}
      
     </div>
     </div>
